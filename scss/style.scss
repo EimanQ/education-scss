@@ -30,12 +30,45 @@ $font-color-fff:#fff;
     background-size: cover;
 }
 
+%for-headers {
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 51px;
+}
+
+%mq-p {
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
 %direction-box {
     width: 320px;
     height: 200px;
-    background-color: red;
     margin-bottom: 32px;
     padding: 24px 32px;
+}
+
+%line-setting {
+    width: 1216px;
+    height: 2px;
+}
+
+%input-style-small {
+    background: #F2F2F2;
+    border-radius: 4px;
+    width: 293px;
+    height: 56px;
+    border: 0px;
+    padding-left: 19px;
+    margin-top: 11px;
+}
+
+%gray-text13 {
+    font-size: 13px;
+    line-height: 22px;
+    color: #787878;
 }
 
 * {
@@ -47,18 +80,14 @@ $font-color-fff:#fff;
 }
 
 body {
-    background-color: $font-color-fff;
     margin: auto;
     width: 1216px;
-    background-color: $font-color-fff;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 33%, rgba(255, 255, 255, 1) 33%);
 }
 
 header {
     margin-top: 20px;
-}
-
-section {
-    width: 1216px;
 }
 
 a {
@@ -142,7 +171,6 @@ a {
 }
 
 .navigation {
-    width: 1216px;
     margin-top: 38px;
 
     ul {
@@ -324,7 +352,6 @@ a {
 }
 
 .container-2 {
-    width: 1216px;
     display: flex;
     justify-content: space-around;
 
@@ -360,7 +387,6 @@ a {
 }
 
 .container-3 {
-    width: 1216px;
     margin-top: 92px;
 
     .head-text-cont3 {
@@ -379,7 +405,7 @@ a {
         @extend %d-f;
         width: 139px;
         height: 46px;
-        margin-right: 70px;
+        margin-right: 35px;
 
         .text-focus-choose {
             font-weight: 600;
@@ -865,7 +891,8 @@ a {
         text-transform: uppercase;
         color: #000000;
     }
-    .arrow{
+
+    .arrow {
         background-image: url(..//img/arrow.svg);
         background-repeat: no-repeat;
         width: 10px;
@@ -873,5 +900,348 @@ a {
         position: absolute;
         left: 740px;
         top: 19px;
+    }
+}
+
+.container-4 {
+    margin-top: 120px;
+
+    h1 {
+        font-weight: 700;
+        font-size: 44px;
+        line-height: 51px;
+        color: #000000;
+        width: 519px;
+    }
+
+    .header-reverse {
+        width: 259px;
+    }
+
+    .advantages-box {
+
+        @extend %d-f-sb;
+
+        .advantages-info {
+            @extend %d-f;
+            justify-content: space-around;
+            flex-direction: column;
+        }
+
+        .cover-box1 {
+            background-image: url(../img/diplom-img.svg);
+            @extend %ph-settings;
+            width: 488px;
+            height: 344px;
+        }
+
+        .cover-box2 {
+            background-image: url(../img/cover-box2.svg);
+            @extend %ph-settings;
+            width: 488px;
+            height: 400px;
+        }
+
+        .cover-box3 {
+            background-image: url(../img/cover-box3.svg);
+            @extend %ph-settings;
+            width: 488px;
+            height: 400px;
+        }
+    }
+}
+
+.advantages-box:not(:first-child) {
+    margin-top: 190px;
+}
+
+
+.advantages-about {
+    font-size: 22px;
+    line-height: 40px;
+    color: #000000;
+    width: 515px;
+}
+
+.advantages-about:last-child {
+    margin-right: 90px;
+}
+
+.text-slider-advantages {
+    width: 592px;
+    @extend %d-f;
+    margin-top: 47px;
+
+    .edtext-adv-focus {
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 30px;
+        color: #000000;
+        margin-right: 103px;
+    }
+
+    .edtext-adv {
+        font-size: 26px;
+        line-height: 30px;
+        color: #A8A8A8;
+        margin-right: 96px;
+    }
+}
+
+.line-advantages {
+    margin-top: 17px;
+    background-color: #DFDFDE;
+    width: 592px;
+    height: 2px;
+
+    .line-focus {
+        width: 88px;
+        height: 3px;
+        background-color: #000000;
+    }
+}
+
+.button-advantages {
+    @extend %d-f;
+    width: 279px;
+    height: 48px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+
+    p {
+        margin: auto;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
+
+.advantages-box:last-child {
+    flex-direction: row-reverse;
+}
+
+.faq {
+    padding-top: 130px;
+    .q-a {
+        .header-q-a {
+            @extend %d-f-sb;
+            margin-top: 120px;
+
+            h1 {
+                font-weight: 700;
+                font-size: 44px;
+                line-height: 51px;
+                color: #FFFFFF;
+            }
+
+            p {
+                @extend %gray-text13;
+                width: 277px;
+                margin-top: 9px;
+            }
+        }
+
+        .line-q-a {
+            @extend %line-setting;
+            background-color: #4A4A4A;
+            margin: 37px 0px;
+        }
+
+        h2 {
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 40px;
+            color: #FFFFFF;
+            width: 800px;
+        }
+    }
+}
+
+.more-questions {
+    background-color: #FFFFFF;
+    @extend %d-f;
+
+    .first-block {
+        @extend %d-f;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 328px;
+        height: 294px;
+        margin: 94px 0px 61px 56px;
+
+        h1 {
+            @extend %for-headers;
+            color: #000000;
+        }
+
+        .answer-info {
+            width: 260px;
+            font-size: 18px;
+            line-height: 32px;
+            color: #000000;
+        }
+
+        .manager {
+            @extend %d-f-sb;
+            flex-direction: row;
+            width: 301px;
+            margin: 0 12px;
+
+            .profile-icon-manager {
+                width: 50px;
+                height: 50px;
+                background-image: url(../img/manager-avatar.svg);
+                @extend %ph-settings;
+            }
+
+            .manager-answer {
+                @extend %gray-text13;
+                width: 232px;
+            }
+        }
+    }
+
+    .second-block {
+        width: 328px;
+        height: 310px;
+        margin: 94px 0px 49px 40px;
+        @extend %d-f-sb;
+        flex-direction: column;
+
+        input-question {
+            @extend %mq-p
+        }
+
+        .input-second-b {
+            @extend %input-style-small;
+        }
+
+        .personal-info {
+            @extend %gray-text13;
+        }
+    }
+
+    .third-block {
+        margin: 94px 0px 49px 40px;
+
+        .q-write {
+            @extend %mq-p;
+        }
+
+        .box-info-mq {
+            @extend %d-f-sb;
+            flex-direction: column;
+            height: 320px;
+
+            .few-questions {
+                @extend %input-style-small;
+                padding-bottom: 150px;
+                width: 325px;
+            }
+        }
+
+        .button-3rdblock {
+            background-color: #000000;
+            width: 344px;
+            height: 63px;
+            border-radius: 4px;
+            @extend %d-f;
+
+            .button-text-mq {
+                @extend %mq-p;
+                margin: auto;
+                color: #FFFFFF;
+            }
+        }
+    }
+}
+
+footer {
+    height: 356px;
+
+    .footer-menu {
+        @extend %d-f-sb;
+        margin-top: 130px;
+
+        .menu-section1 {
+            width: 224px;
+            height: 136px;
+            @extend %d-f-sb;
+            flex-direction: column;
+        }
+
+        .text-footer {
+            @extend %gray-text13;
+        }
+
+        .text-footer2 {
+            @extend %gray-text13;
+            color: #fff;
+        }
+    }
+
+    .menu-section2 {
+        @extend %d-f-sb;
+        width: 520px;
+
+        ul {
+            @extend %d-f-sb;
+            flex-direction: column;
+            height: 190px;
+
+            li {
+                @extend %mq-p;
+                list-style-type: none;
+                color: #FFFFFF;
+            }
+        }
+    }
+
+    .menu-section3 {
+        width: 152px;
+        height: 190px;
+        @extend %d-f-sb;
+        flex-direction: column;
+        margin-right: 67px;
+
+        .text-menu-section3 {
+            height: 79px;
+            @extend %d-f-sb;
+            flex-direction: column;
+
+            .contact-number {
+                @extend %mq-p;
+                color: #FFFFFF;
+            }
+
+            .worktime {
+                @extend %gray-text13;
+                color: #FFFFFF;
+            }
+        }
+    }
+}
+
+.pick-education {
+    height: 64px;
+    @extend %d-f;
+    position: relative;
+    margin-top: 94px;
+
+    h1 {
+        font-size: 22px;
+        line-height: 32px;
+        color: #FFFFFF;
+        margin: auto;
+    }
+
+    .dot{
+        background-image: url(../img/dot.svg);
+        @extend %ph-settings;
+        width: 8px;
+        height: 8px;
+        position: absolute;
+        top: 29px;
+        left: 734px;
     }
 }

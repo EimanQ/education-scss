@@ -2,7 +2,7 @@
   font-family: "Inter";
   src: local(""), url(../fonts/Inter-Regular.ttf) format("truetype"), url(../fonts/Inter-Medium.ttf) format("truetype"), url(../fonts/Inter-Bold.ttf) format("truetype"), url(../fonts/Inter-ExtraBold.ttf) format("truetype");
 }
-.slidertext-3, .slidertext-2, .text-slider .slidertext-focus, .text-slider, .about-education ul, .profile-menu {
+.pick-education, .more-questions .third-block .button-3rdblock, .more-questions .first-block, .more-questions, .button-advantages, .text-slider-advantages, .container-4 .advantages-box .advantages-info, .slidertext-3, .slidertext-2, .text-slider .slidertext-focus, .text-slider, .about-education ul, .profile-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -15,7 +15,7 @@
   background-size: cover;
 }
 
-.study-directions, .your-education .head-text-education, .your-education .sliders-box, .container-1, .navigation ul, .profile, .logo-items, .header-box {
+footer .menu-section3 .text-menu-section3, footer .menu-section3, footer .menu-section2 ul, footer .menu-section2, footer .footer-menu .menu-section1, footer .footer-menu, .more-questions .third-block .box-info-mq, .more-questions .second-block, .more-questions .first-block .manager, .faq .q-a .header-q-a, .container-4 .advantages-box, .study-directions, .your-education .head-text-education, .your-education .sliders-box, .container-1, .navigation ul, .profile, .logo-items, .header-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -24,17 +24,50 @@
           justify-content: space-between;
 }
 
-.directions-box6 .consult-button-last .ellipsis, .directions-box6 .svg-icon-6, .directions-box6, .directions-box5 .consult-button .ellipsis, .directions-box5 .svg-icon-5, .directions-box5, .directions-box4 .consult-button .ellipsis, .directions-box4 .svg-icon-4, .directions-box4, .directions-box3 .consult-button .ellipsis, .directions-box3 .svg-icon-3, .directions-box3, .directions-box2 .consult-button .ellipsis, .directions-box2 .svg-icon-2, .directions-box2, .directions-box1 .consult-button .ellipsis, .directions-box1 .svg-icon-1, .directions-box1, .container-2 .emblem-4, .container-2 .emblem-3, .container-2 .emblem-2, .container-2 .emblem-1, .about-education .share-icon, .about-education .moscow-img, .about-education, .header-logo {
+.pick-education .dot, .more-questions .first-block .manager .profile-icon-manager, .container-4 .advantages-box .cover-box3, .container-4 .advantages-box .cover-box2, .container-4 .advantages-box .cover-box1, .directions-box6 .consult-button-last .ellipsis, .directions-box6 .svg-icon-6, .directions-box6, .directions-box5 .consult-button .ellipsis, .directions-box5 .svg-icon-5, .directions-box5, .directions-box4 .consult-button .ellipsis, .directions-box4 .svg-icon-4, .directions-box4, .directions-box3 .consult-button .ellipsis, .directions-box3 .svg-icon-3, .directions-box3, .directions-box2 .consult-button .ellipsis, .directions-box2 .svg-icon-2, .directions-box2, .directions-box1 .consult-button .ellipsis, .directions-box1 .svg-icon-1, .directions-box1, .container-2 .emblem-4, .container-2 .emblem-3, .container-2 .emblem-2, .container-2 .emblem-1, .about-education .share-icon, .about-education .moscow-img, .about-education, .header-logo {
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.more-questions .first-block h1 {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 51px;
+}
+
+footer .menu-section3 .text-menu-section3 .contact-number, footer .menu-section2 ul li, .more-questions .third-block .button-3rdblock .button-text-mq, .more-questions .third-block .q-write, .more-questions .second-block input-question {
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+  color: #000000;
 }
 
 .directions-box6, .directions-box5, .directions-box4, .directions-box3, .directions-box2, .directions-box1 {
   width: 320px;
   height: 200px;
-  background-color: red;
   margin-bottom: 32px;
   padding: 24px 32px;
+}
+
+.faq .q-a .line-q-a {
+  width: 1216px;
+  height: 2px;
+}
+
+.more-questions .third-block .box-info-mq .few-questions, .more-questions .second-block .input-second-b {
+  background: #F2F2F2;
+  border-radius: 4px;
+  width: 293px;
+  height: 56px;
+  border: 0px;
+  padding-left: 19px;
+  margin-top: 11px;
+}
+
+footer .menu-section3 .text-menu-section3 .worktime, footer .footer-menu .text-footer2, footer .footer-menu .text-footer, .more-questions .second-block .personal-info, .more-questions .first-block .manager .manager-answer, .faq .q-a .header-q-a p {
+  font-size: 13px;
+  line-height: 22px;
+  color: #787878;
 }
 
 * {
@@ -46,18 +79,15 @@
 }
 
 body {
-  background-color: #fff;
   margin: auto;
   width: 1216px;
-  background-color: #fff;
+  background: black;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(33%, black), color-stop(33%, white));
+  background: linear-gradient(0deg, black 33%, white 33%);
 }
 
 header {
   margin-top: 20px;
-}
-
-section {
-  width: 1216px;
 }
 
 a {
@@ -122,7 +152,6 @@ a {
 }
 
 .navigation {
-  width: 1216px;
   margin-top: 38px;
 }
 .navigation ul li {
@@ -273,7 +302,6 @@ a {
 }
 
 .container-2 {
-  width: 1216px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -303,7 +331,6 @@ a {
 }
 
 .container-3 {
-  width: 1216px;
   margin-top: 92px;
 }
 .container-3 .head-text-cont3 {
@@ -319,7 +346,7 @@ a {
 .text-slider .slidertext-focus {
   width: 139px;
   height: 46px;
-  margin-right: 70px;
+  margin-right: 35px;
 }
 .text-slider .slidertext-focus .text-focus-choose {
   font-weight: 600;
@@ -743,4 +770,282 @@ a {
   position: absolute;
   left: 740px;
   top: 19px;
+}
+
+.container-4 {
+  margin-top: 120px;
+}
+.container-4 h1 {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 51px;
+  color: #000000;
+  width: 519px;
+}
+.container-4 .header-reverse {
+  width: 259px;
+}
+.container-4 .advantages-box .advantages-info {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.container-4 .advantages-box .cover-box1 {
+  background-image: url(../img/diplom-img.svg);
+  width: 488px;
+  height: 344px;
+}
+.container-4 .advantages-box .cover-box2 {
+  background-image: url(../img/cover-box2.svg);
+  width: 488px;
+  height: 400px;
+}
+.container-4 .advantages-box .cover-box3 {
+  background-image: url(../img/cover-box3.svg);
+  width: 488px;
+  height: 400px;
+}
+
+.advantages-box:not(:first-child) {
+  margin-top: 190px;
+}
+
+.advantages-about {
+  font-size: 22px;
+  line-height: 40px;
+  color: #000000;
+  width: 515px;
+}
+
+.advantages-about:last-child {
+  margin-right: 90px;
+}
+
+.text-slider-advantages {
+  width: 592px;
+  margin-top: 47px;
+}
+.text-slider-advantages .edtext-adv-focus {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 30px;
+  color: #000000;
+  margin-right: 103px;
+}
+.text-slider-advantages .edtext-adv {
+  font-size: 26px;
+  line-height: 30px;
+  color: #A8A8A8;
+  margin-right: 96px;
+}
+
+.line-advantages {
+  margin-top: 17px;
+  background-color: #DFDFDE;
+  width: 592px;
+  height: 2px;
+}
+.line-advantages .line-focus {
+  width: 88px;
+  height: 3px;
+  background-color: #000000;
+}
+
+.button-advantages {
+  width: 279px;
+  height: 48px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+}
+.button-advantages p {
+  margin: auto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.advantages-box:last-child {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.faq {
+  padding-top: 130px;
+}
+.faq .q-a .header-q-a {
+  margin-top: 120px;
+}
+.faq .q-a .header-q-a h1 {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 51px;
+  color: #FFFFFF;
+}
+.faq .q-a .header-q-a p {
+  width: 277px;
+  margin-top: 9px;
+}
+.faq .q-a .line-q-a {
+  background-color: #4A4A4A;
+  margin: 37px 0px;
+}
+.faq .q-a h2 {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 40px;
+  color: #FFFFFF;
+  width: 800px;
+}
+
+.more-questions {
+  background-color: #FFFFFF;
+}
+.more-questions .first-block {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 328px;
+  height: 294px;
+  margin: 94px 0px 61px 56px;
+}
+.more-questions .first-block h1 {
+  color: #000000;
+}
+.more-questions .first-block .answer-info {
+  width: 260px;
+  font-size: 18px;
+  line-height: 32px;
+  color: #000000;
+}
+.more-questions .first-block .manager {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 301px;
+  margin: 0 12px;
+}
+.more-questions .first-block .manager .profile-icon-manager {
+  width: 50px;
+  height: 50px;
+  background-image: url(../img/manager-avatar.svg);
+}
+.more-questions .first-block .manager .manager-answer {
+  width: 232px;
+}
+.more-questions .second-block {
+  width: 328px;
+  height: 310px;
+  margin: 94px 0px 49px 40px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.more-questions .third-block {
+  margin: 94px 0px 49px 40px;
+}
+.more-questions .third-block .box-info-mq {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 320px;
+}
+.more-questions .third-block .box-info-mq .few-questions {
+  padding-bottom: 150px;
+  width: 325px;
+}
+.more-questions .third-block .button-3rdblock {
+  background-color: #000000;
+  width: 344px;
+  height: 63px;
+  border-radius: 4px;
+}
+.more-questions .third-block .button-3rdblock .button-text-mq {
+  margin: auto;
+  color: #FFFFFF;
+}
+
+footer {
+  height: 356px;
+}
+footer .footer-menu {
+  margin-top: 130px;
+}
+footer .footer-menu .menu-section1 {
+  width: 224px;
+  height: 136px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+footer .footer-menu .text-footer2 {
+  color: #fff;
+}
+footer .menu-section2 {
+  width: 520px;
+}
+footer .menu-section2 ul {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 190px;
+}
+footer .menu-section2 ul li {
+  list-style-type: none;
+  color: #FFFFFF;
+}
+footer .menu-section3 {
+  width: 152px;
+  height: 190px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 67px;
+}
+footer .menu-section3 .text-menu-section3 {
+  height: 79px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+footer .menu-section3 .text-menu-section3 .contact-number {
+  color: #FFFFFF;
+}
+footer .menu-section3 .text-menu-section3 .worktime {
+  color: #FFFFFF;
+}
+
+.pick-education {
+  height: 64px;
+  position: relative;
+  margin-top: 94px;
+}
+.pick-education h1 {
+  font-size: 22px;
+  line-height: 32px;
+  color: #FFFFFF;
+  margin: auto;
+}
+.pick-education .dot {
+  background-image: url(../img/dot.svg);
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  top: 29px;
+  left: 734px;
 }
