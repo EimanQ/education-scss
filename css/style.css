@@ -963,7 +963,7 @@ footer .menu-section3 .text-menu-section3 .worktime {
   left: 734px;
 }
 
-@media (max-width: 1216px) {
+@media screen and (max-width: 1216px) {
   body {
     background: black;
     background: -webkit-gradient(linear, left bottom, left top, color-stop(27%, black), color-stop(27%, white));
