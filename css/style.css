@@ -2,10 +2,40 @@
   font-family: "Inter";
   src: local(""), url(../fonts/Inter-Regular.ttf) format("truetype"), url(../fonts/Inter-Medium.ttf) format("truetype"), url(../fonts/Inter-Bold.ttf) format("truetype"), url(../fonts/Inter-ExtraBold.ttf) format("truetype");
 }
-.pick-education, .more-questions .third-block .button-3rdblock, .more-questions .first-block, .more-questions, .button-advantages, .text-slider-advantages, .container-4 .advantages-box .advantages-info, .slidertext-3, .slidertext-2, .text-slider .slidertext-focus, .text-slider, .about-education ul, .profile-menu {
+.pick-education, .more-questions .third-block .button-3rdblock, .more-questions, .button-advantages, .text-slider-advantages, .slidertext-3, .slidertext-2, .text-slider .slidertext-focus, .text-slider, .about-education ul, .button, .profile-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+footer .menu-section2, footer .footer-menu, .more-questions .first-block .manager, .faq .q-a .header-q-a, .container-4 .advantages-box, .study-directions, .your-education .head-text-education, .your-education .sliders-box, .container-1, .navigation ul, .profile, .logo-items, .header-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .menu-section3 .text-menu-section3, footer .menu-section3, footer .menu-section2 ul, footer .footer-menu .menu-section1, .more-questions .third-block .box-info-mq, .more-questions .second-block, .more-questions .first-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container-4 .advantages-box .advantages-info, .container-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .profile .header-avatar-icon, .logo-items .wa, .logo-items .inst, .logo-items .vk {
@@ -15,31 +45,91 @@
   background-size: cover;
 }
 
-footer .menu-section3 .text-menu-section3, footer .menu-section3, footer .menu-section2 ul, footer .menu-section2, footer .footer-menu .menu-section1, footer .footer-menu, .more-questions .third-block .box-info-mq, .more-questions .second-block, .more-questions .first-block .manager, .faq .q-a .header-q-a, .container-4 .advantages-box, .study-directions, .your-education .head-text-education, .your-education .sliders-box, .container-1, .navigation ul, .profile, .logo-items, .header-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
 .pick-education .dot, .more-questions .first-block .manager .profile-icon-manager, .container-4 .advantages-box .cover-box3, .container-4 .advantages-box .cover-box2, .container-4 .advantages-box .cover-box1, .directions-box6 .consult-button-last .ellipsis, .directions-box6 .svg-icon-6, .directions-box6, .directions-box5 .consult-button .ellipsis, .directions-box5 .svg-icon-5, .directions-box5, .directions-box4 .consult-button .ellipsis, .directions-box4 .svg-icon-4, .directions-box4, .directions-box3 .consult-button .ellipsis, .directions-box3 .svg-icon-3, .directions-box3, .directions-box2 .consult-button .ellipsis, .directions-box2 .svg-icon-2, .directions-box2, .directions-box1 .consult-button .ellipsis, .directions-box1 .svg-icon-1, .directions-box1, .container-2 .emblem-4, .container-2 .emblem-3, .container-2 .emblem-2, .container-2 .emblem-1, .about-education .share-icon, .about-education .moscow-img, .about-education, .header-logo {
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.more-questions .first-block h1 {
+.container-3 .head-text-cont3, .about-education h1 {
+  font-weight: 800;
+  font-size: 55px;
+  line-height: 60px;
+}
+
+.faq .q-a .header-q-a h1, .container-4 h1, .more-questions .first-block h1 {
   font-weight: 700;
   font-size: 44px;
   line-height: 51px;
 }
 
-footer .menu-section3 .text-menu-section3 .contact-number, footer .menu-section2 ul li, .more-questions .third-block .button-3rdblock .button-text-mq, .more-questions .third-block .q-write, .more-questions .second-block input-question {
+.text-slider-advantages .edtext-adv-focus, .text-slider .slidertext-focus .text-focus-choose {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 30px;
+}
+
+.text-slider-advantages .edtext-adv, .text-choose {
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 30px;
+}
+
+.pick-education h1, .advantages-about, .about-education p {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 40px;
+}
+
+.faq .q-a h2, .directions-box6 .direction-header, .directions-box5 .direction-header, .directions-box4 .direction-header, .directions-box3 .direction-header, .directions-box2 .direction-header, .directions-box1 .direction-header, .your-education .head-text-education h1 {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 32px;
+}
+
+.more-questions .first-block .answer-info, .your-education .question {
+  font-size: 18px;
+  line-height: 32px;
+}
+
+footer .menu-section3 .text-menu-section3 .contact-number, footer .menu-section2 ul li, .more-questions .third-block .button-3rdblock .button-text-mq, .more-questions .third-block .q-write, .more-questions .second-block input-question, .navigation ul li {
+  font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   letter-spacing: 0.01em;
-  color: #000000;
+}
+
+.button-advantages p, .your-education .button-education p, .your-education .answers p, .profile p {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+}
+
+.directions-box6 ul li, .directions-box5 ul li, .directions-box4 ul li, .directions-box3 ul li, .directions-box2 ul li, .directions-box1 ul li, .about-education ul li:not(:first-child), .about-education ul li {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.01em;
+}
+
+.degree, .text-slider .slidertext-focus .degree-focus {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.01em;
+}
+
+.your-education .head-text-education p, footer .menu-section3 .text-menu-section3 .worktime, footer .footer-menu .text-footer2, footer .footer-menu .text-footer, .more-questions .second-block .personal-info, .more-questions .first-block .manager .manager-answer, .faq .q-a .header-q-a p {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 22px;
+}
+
+.button-24 p, .directions-box6 .consult-button-last p, .directions-box5 .consult-button p, .directions-box4 .consult-button p, .directions-box3 .consult-button p, .directions-box2 .consult-button p, .directions-box1 .consult-button p, .button p {
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 22px;
+  letter-spacing: 0.17em;
 }
 
 .directions-box6, .directions-box5, .directions-box4, .directions-box3, .directions-box2, .directions-box1 {
@@ -65,9 +155,22 @@ footer .menu-section3 .text-menu-section3 .contact-number, footer .menu-section2
 }
 
 footer .menu-section3 .text-menu-section3 .worktime, footer .footer-menu .text-footer2, footer .footer-menu .text-footer, .more-questions .second-block .personal-info, .more-questions .first-block .manager .manager-answer, .faq .q-a .header-q-a p {
-  font-size: 13px;
-  line-height: 22px;
   color: #787878;
+}
+
+.directions-box6 .svg-icon-6, .directions-box5 .svg-icon-5, .directions-box4 .svg-icon-4, .directions-box3 .svg-icon-3, .directions-box2 .svg-icon-2, .directions-box1 .svg-icon-1 {
+  width: 120px;
+  height: 120px;
+}
+
+.directions-box6 .svg-icon-6, .directions-box5 .svg-icon-5, .directions-box4 .svg-icon-4, .directions-box3 .svg-icon-3, .directions-box2 .svg-icon-2, .directions-box1 .svg-icon-1 {
+  top: 104px;
+  left: 232px;
+}
+
+.container-4 .advantages-box .cover-box3, .container-4 .advantages-box .cover-box2 {
+  width: 488px;
+  height: 400px;
 }
 
 * {
@@ -80,14 +183,25 @@ footer .menu-section3 .text-menu-section3 .worktime, footer .footer-menu .text-f
 
 body {
   margin: auto;
-  width: 1216px;
   background: black;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(33%, black), color-stop(33%, white));
   background: linear-gradient(0deg, black 33%, white 33%);
 }
 
 header {
+  max-width: 1216px;
+  margin: auto;
   margin-top: 20px;
+}
+
+main {
+  width: 1216px;
+  margin: auto;
+}
+
+footer {
+  width: 1216px;
+  margin: auto;
 }
 
 a {
@@ -122,10 +236,6 @@ a {
   background-image: url(../img/avatar.svg);
 }
 .profile p {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 22px;
-  letter-spacing: 0.01em;
   color: #000000;
   margin: auto;
 }
@@ -133,17 +243,10 @@ a {
 .button {
   width: 177px;
   height: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   background-color: black;
   border-radius: 4px;
 }
 .button p {
-  font-weight: 700;
-  font-size: 11px;
-  line-height: 22px;
-  letter-spacing: 0.17em;
   text-transform: uppercase;
   color: #FFFFFF;
   width: 153px;
@@ -159,9 +262,6 @@ a {
   background: #F2F2F2;
   border-radius: 28px;
   list-style-type: none;
-  font-size: 16px;
-  line-height: 22px;
-  letter-spacing: 0.01em;
 }
 
 .about-education {
@@ -173,15 +273,10 @@ a {
 }
 .about-education h1 {
   width: 506px;
-  font-weight: 800;
-  font-size: 55px;
-  line-height: 60px;
   color: #000000;
 }
 .about-education p {
   width: 550px;
-  font-size: 22px;
-  line-height: 40px;
   color: #000000;
   margin-top: 21px;
 }
@@ -189,14 +284,9 @@ a {
   margin-left: 16px;
   margin-top: 68px;
 }
-.about-education ul li {
-  line-height: 28px;
-  letter-spacing: 0.01em;
-}
 .about-education ul li:not(:first-child) {
   margin-left: 40px;
   padding-left: 7px;
-  font-size: 14px;
 }
 .about-education .moscow-img {
   background-image: url(../img/Moscow-image.svg);
@@ -236,22 +326,15 @@ a {
   margin-top: 15px;
 }
 .your-education .head-text-education h1 {
-  font-weight: 600;
-  font-size: 22px;
-  line-height: 40px;
   color: #FFFFFF;
 }
 .your-education .head-text-education p {
-  font-size: 13px;
-  line-height: 22px;
   color: #787878;
   margin-top: 12px;
 }
 .your-education .question {
   margin-top: 95px;
   font-weight: 600;
-  font-size: 18px;
-  line-height: 26px;
   color: #FFFFFF;
 }
 .your-education .answers {
@@ -266,10 +349,6 @@ a {
   border: 1px #252525 solid;
   border-radius: 28px;
   list-style-type: none;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 22px;
-  letter-spacing: 0.01em;
   color: #A8A8A8;
   margin-right: 2px;
   margin-top: 18px;
@@ -285,10 +364,6 @@ a {
   margin-top: 53px;
 }
 .your-education .button-education p {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 22px;
-  letter-spacing: 0.01em;
   color: #FFFFFF;
   margin: auto;
 }
@@ -301,13 +376,6 @@ a {
   margin-top: 70px;
 }
 
-.container-2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
 .container-2 .emblem-1,
 .container-2 .emblem-2,
 .container-2 .emblem-3,
@@ -334,9 +402,6 @@ a {
   margin-top: 92px;
 }
 .container-3 .head-text-cont3 {
-  font-weight: 800;
-  font-size: 55px;
-  line-height: 60px;
   color: #000000;
 }
 
@@ -349,15 +414,9 @@ a {
   margin-right: 35px;
 }
 .text-slider .slidertext-focus .text-focus-choose {
-  font-weight: 600;
-  font-size: 26px;
-  line-height: 30px;
   margin: auto;
 }
 .text-slider .slidertext-focus .degree-focus {
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 24px;
   color: #000000;
   margin: 0px 8px;
 }
@@ -374,18 +433,12 @@ a {
 }
 
 .text-choose {
-  font-weight: 400;
-  font-size: 26px;
-  line-height: 30px;
   color: #A8A8A8;
   margin: auto;
   margin-right: 8px;
 }
 
 .degree {
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 24px;
   color: #A8A8A8;
 }
 
@@ -412,26 +465,16 @@ a {
   position: relative;
 }
 .directions-box1 .direction-header {
-  font-weight: 600;
-  font-size: 22px;
-  line-height: 32px;
   color: #000000;
 }
 .directions-box1 .svg-icon-1 {
   background-image: url(../img/svg-icon1.svg);
-  width: 120px;
-  height: 120px;
   position: absolute;
-  top: 104px;
-  left: 232px;
 }
 .directions-box1 ul {
   margin-top: 9px;
 }
 .directions-box1 ul li {
-  font-size: 14px;
-  line-height: 28px;
-  letter-spacing: 0.01em;
   color: #000000;
   margin-left: 19px;
 }
@@ -452,10 +495,6 @@ a {
   left: 14px;
 }
 .directions-box1 .consult-button p {
-  font-weight: 700;
-  font-size: 11px;
-  line-height: 22px;
-  letter-spacing: 0.17em;
   text-transform: uppercase;
   color: #000000;
   text-align: center;
@@ -468,26 +507,16 @@ a {
   position: relative;
 }
 .directions-box2 .direction-header {
-  font-weight: 600;
-  font-size: 22px;
-  line-height: 32px;
   color: #000000;
 }
 .directions-box2 .svg-icon-2 {
   background-image: url(../img/svg-icon2.svg);
-  width: 120px;
-  height: 120px;
   position: absolute;
-  top: 104px;
-  left: 232px;
 }
 .directions-box2 ul {
   margin-top: 9px;
 }
 .directions-box2 ul li {
-  font-size: 14px;
-  line-height: 28px;
-  letter-spacing: 0.01em;
   color: #000000;
   margin-left: 19px;
 }
@@ -508,10 +537,6 @@ a {
   left: 14px;
 }
 .directions-box2 .consult-button p {
-  font-weight: 700;
-  font-size: 11px;
-  line-height: 22px;
-  letter-spacing: 0.17em;
   text-transform: uppercase;
   color: #000000;
   text-align: center;
@@ -524,26 +549,16 @@ a {
   position: relative;
 }
 .directions-box3 .direction-header {
-  font-weight: 600;
-  font-size: 22px;
-  line-height: 32px;
   color: #000000;
 }
 .directions-box3 .svg-icon-3 {
   background-image: url(../img/svg-icon3.svg);
-  width: 120px;
-  height: 120px;
   position: absolute;
-  top: 104px;
-  left: 232px;
 }
 .directions-box3 ul {
   margin-top: 9px;
 }
 .directions-box3 ul li {
-  font-size: 14px;
-  line-height: 28px;
-  letter-spacing: 0.01em;
   color: #000000;
   margin-left: 19px;
 }
@@ -564,10 +579,6 @@ a {
   left: 14px;
 }
 .directions-box3 .consult-button p {
-  font-weight: 700;
-  font-size: 11px;
-  line-height: 22px;
-  letter-spacing: 0.17em;
   text-transform: uppercase;
   color: #000000;
   text-align: center;
@@ -580,26 +591,16 @@ a {
   position: relative;
 }
 .directions-box4 .direction-header {
-  font-weight: 600;
-  font-size: 22px;
-  line-height: 32px;
   color: #000000;
 }
 .directions-box4 .svg-icon-4 {
   background-image: url(../img/svg-icon4.svg);
-  width: 120px;
-  height: 120px;
   position: absolute;
-  top: 104px;
-  left: 232px;
 }
 .directions-box4 ul {
   margin-top: 9px;
 }
 .directions-box4 ul li {
-  font-size: 14px;
-  line-height: 28px;
-  letter-spacing: 0.01em;
   color: #000000;
   margin-left: 19px;
 }
@@ -620,10 +621,6 @@ a {
   left: 14px;
 }
 .directions-box4 .consult-button p {
-  font-weight: 700;
-  font-size: 11px;
-  line-height: 22px;
-  letter-spacing: 0.17em;
   text-transform: uppercase;
   color: #000000;
   text-align: center;
@@ -636,26 +633,16 @@ a {
   position: relative;
 }
 .directions-box5 .direction-header {
-  font-weight: 600;
-  font-size: 22px;
-  line-height: 32px;
   color: #000000;
 }
 .directions-box5 .svg-icon-5 {
   background-image: url(../img/svg-icon5.svg);
-  width: 120px;
-  height: 120px;
   position: absolute;
-  top: 104px;
-  left: 232px;
 }
 .directions-box5 ul {
   margin-top: 9px;
 }
 .directions-box5 ul li {
-  font-size: 14px;
-  line-height: 28px;
-  letter-spacing: 0.01em;
   color: #000000;
   margin-left: 19px;
 }
@@ -676,10 +663,6 @@ a {
   left: 14px;
 }
 .directions-box5 .consult-button p {
-  font-weight: 700;
-  font-size: 11px;
-  line-height: 22px;
-  letter-spacing: 0.17em;
   text-transform: uppercase;
   color: #000000;
   text-align: center;
@@ -692,26 +675,16 @@ a {
   position: relative;
 }
 .directions-box6 .direction-header {
-  font-weight: 600;
-  font-size: 22px;
-  line-height: 32px;
   color: #000000;
 }
 .directions-box6 .svg-icon-6 {
   background-image: url(../img/svg-icon6.svg);
-  width: 120px;
-  height: 120px;
   position: absolute;
-  top: 104px;
-  left: 232px;
 }
 .directions-box6 ul {
   margin-top: 9px;
 }
 .directions-box6 ul li {
-  font-size: 14px;
-  line-height: 28px;
-  letter-spacing: 0.01em;
   color: #000000;
   margin-left: 19px;
 }
@@ -732,10 +705,6 @@ a {
   left: 14px;
 }
 .directions-box6 .consult-button-last p {
-  font-weight: 700;
-  font-size: 11px;
-  line-height: 22px;
-  letter-spacing: 0.17em;
   text-transform: uppercase;
   color: #000000;
   text-align: center;
@@ -755,10 +724,6 @@ a {
 }
 .button-24 p {
   margin: auto;
-  font-weight: 700;
-  font-size: 11px;
-  line-height: 22px;
-  letter-spacing: 0.17em;
   text-transform: uppercase;
   color: #000000;
 }
@@ -776,9 +741,6 @@ a {
   margin-top: 120px;
 }
 .container-4 h1 {
-  font-weight: 700;
-  font-size: 44px;
-  line-height: 51px;
   color: #000000;
   width: 519px;
 }
@@ -786,8 +748,6 @@ a {
   width: 259px;
 }
 .container-4 .advantages-box .advantages-info {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -800,13 +760,9 @@ a {
 }
 .container-4 .advantages-box .cover-box2 {
   background-image: url(../img/cover-box2.svg);
-  width: 488px;
-  height: 400px;
 }
 .container-4 .advantages-box .cover-box3 {
   background-image: url(../img/cover-box3.svg);
-  width: 488px;
-  height: 400px;
 }
 
 .advantages-box:not(:first-child) {
@@ -814,8 +770,7 @@ a {
 }
 
 .advantages-about {
-  font-size: 22px;
-  line-height: 40px;
+  margin-top: 20px;
   color: #000000;
   width: 515px;
 }
@@ -829,15 +784,10 @@ a {
   margin-top: 47px;
 }
 .text-slider-advantages .edtext-adv-focus {
-  font-weight: 600;
-  font-size: 26px;
-  line-height: 30px;
   color: #000000;
   margin-right: 103px;
 }
 .text-slider-advantages .edtext-adv {
-  font-size: 26px;
-  line-height: 30px;
   color: #A8A8A8;
   margin-right: 96px;
 }
@@ -862,9 +812,6 @@ a {
 }
 .button-advantages p {
   margin: auto;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 22px;
 }
 
 .advantages-box:last-child {
@@ -881,9 +828,6 @@ a {
   margin-top: 120px;
 }
 .faq .q-a .header-q-a h1 {
-  font-weight: 700;
-  font-size: 44px;
-  line-height: 51px;
   color: #FFFFFF;
 }
 .faq .q-a .header-q-a p {
@@ -895,8 +839,6 @@ a {
   margin: 37px 0px;
 }
 .faq .q-a h2 {
-  font-weight: 600;
-  font-size: 22px;
   line-height: 40px;
   color: #FFFFFF;
   width: 800px;
@@ -906,13 +848,6 @@ a {
   background-color: #FFFFFF;
 }
 .more-questions .first-block {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   width: 328px;
   height: 294px;
   margin: 94px 0px 61px 56px;
@@ -922,8 +857,6 @@ a {
 }
 .more-questions .first-block .answer-info {
   width: 260px;
-  font-size: 18px;
-  line-height: 32px;
   color: #000000;
 }
 .more-questions .first-block .manager {
@@ -946,19 +879,17 @@ a {
   width: 328px;
   height: 310px;
   margin: 94px 0px 49px 40px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+}
+.more-questions .second-block input-question {
+  color: #000000;
 }
 .more-questions .third-block {
   margin: 94px 0px 49px 40px;
 }
+.more-questions .third-block .q-write {
+  color: #000000;
+}
 .more-questions .third-block .box-info-mq {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   height: 320px;
 }
 .more-questions .third-block .box-info-mq .few-questions {
@@ -985,22 +916,14 @@ footer .footer-menu {
 footer .footer-menu .menu-section1 {
   width: 224px;
   height: 136px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 footer .footer-menu .text-footer2 {
-  color: #fff;
+  color: #FFFFFF;
 }
 footer .menu-section2 {
   width: 520px;
 }
 footer .menu-section2 ul {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   height: 190px;
 }
 footer .menu-section2 ul li {
@@ -1010,18 +933,10 @@ footer .menu-section2 ul li {
 footer .menu-section3 {
   width: 152px;
   height: 190px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   margin-right: 67px;
 }
 footer .menu-section3 .text-menu-section3 {
   height: 79px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 footer .menu-section3 .text-menu-section3 .contact-number {
   color: #FFFFFF;
@@ -1036,8 +951,6 @@ footer .menu-section3 .text-menu-section3 .worktime {
   margin-top: 94px;
 }
 .pick-education h1 {
-  font-size: 22px;
-  line-height: 32px;
   color: #FFFFFF;
   margin: auto;
 }
@@ -1048,4 +961,216 @@ footer .menu-section3 .text-menu-section3 .worktime {
   position: absolute;
   top: 29px;
   left: 734px;
+}
+
+@media (max-width: 1216px) {
+  body {
+    background: black;
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(27%, black), color-stop(27%, white));
+    background: linear-gradient(0deg, black 27%, white 27%);
+  }
+
+  header {
+    max-width: 960px;
+    margin: auto;
+    margin-top: 20px;
+  }
+  header .navigation {
+    margin: auto;
+  }
+  header .navigation ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 20px;
+  }
+  header .navigation ul li {
+    margin: 10px;
+  }
+
+  main {
+    width: 960px;
+    margin: auto;
+  }
+  main .container-1 .about-education {
+    width: 520px;
+    height: 380px;
+  }
+  main .container-1 .about-education h1 {
+    font-size: 43px;
+    max-width: 80%;
+  }
+  main .container-1 .about-education p {
+    font-size: 15px;
+    max-width: 80%;
+  }
+  main .container-1 .about-education ul li {
+    font-size: 11px;
+  }
+  main .container-1 .about-education .moscow-img {
+    width: 80px;
+    height: 80px;
+    top: 340px;
+    left: 505px;
+  }
+  main .container-1 .about-education .share-icon {
+    width: 20px;
+    height: 20px;
+    top: 50px;
+    left: 550px;
+  }
+  main .container-1 .your-education {
+    width: 270px;
+    height: 389px;
+  }
+  main .container-1 .your-education .sliders-box .slider-focus,
+main .container-1 .your-education .sliders-box .slider {
+    max-width: 30%;
+  }
+  main .container-1 .your-education .head-text-education {
+    margin-top: 27px;
+  }
+  main .container-1 .your-education .head-text-education h1 {
+    font-size: 30px;
+  }
+  main .container-1 .your-education .head-text-education p {
+    font-size: 20px;
+  }
+  main .container-1 .your-education .answers p {
+    font-size: 12px;
+  }
+  main .container-1 .your-education .button-education {
+    max-width: 70%;
+    margin: auto;
+    margin-top: 20px;
+  }
+  main .bottom-line {
+    width: 960px;
+  }
+  main .container-3 .line {
+    width: 960px;
+  }
+  main .button-24 {
+    width: 960px;
+  }
+  main .button-24 .arrow {
+    left: 620px;
+  }
+  main .container-4 .advantages-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .container-4 .advantages-box .advantages-info {
+    width: 960px;
+  }
+  main .container-4 .advantages-box .advantages-info h1 {
+    font-size: 34px;
+    width: 80%;
+  }
+  main .container-4 .advantages-box .advantages-info .text-slider-advantages p {
+    font-size: 20px;
+  }
+  main .container-4 .advantages-box .advantages-info .line-advantages {
+    max-width: 70%;
+  }
+  main .container-4 .advantages-about {
+    font-size: 20px;
+    width: 80%;
+  }
+  main .container-4 .cover-box1,
+main .container-4 .cover-box2,
+main .container-4 .cover-box3 {
+    margin-top: 30px;
+    max-width: 100%;
+  }
+  main .faq .q-a .line-q-a {
+    width: 960px;
+  }
+  main .more-questions .first-block h1 {
+    font-size: 30px;
+  }
+  main .more-questions .first-block .answer-info {
+    font-size: 15px;
+    width: 70%;
+  }
+  main .more-questions .first-block .manager {
+    margin: 0px 3px;
+  }
+  main .more-questions .first-block .manager .profile-icon-manager {
+    width: 40px;
+    height: 40px;
+  }
+  main .more-questions .first-block .manager .manager-answer {
+    font-size: 11px;
+    width: 80%;
+  }
+  main .more-questions .second-block {
+    margin: 104px 0px 49px 0px;
+  }
+  main .more-questions .second-block input-question {
+    font-size: 15px;
+  }
+  main .more-questions .second-block .input-second-b {
+    width: 190px;
+  }
+  main .more-questions .second-block .personal-info {
+    font-size: 11px;
+    width: 90%;
+  }
+  main .more-questions .third-block {
+    margin: 101px 30px 0px 0px;
+  }
+  main .more-questions .third-block .q-write {
+    font-size: 15px;
+  }
+  main .more-questions .third-block .box-info-mq {
+    height: 280px;
+  }
+  main .more-questions .third-block .box-info-mq .few-questions {
+    width: 300px;
+  }
+  main .more-questions .third-block .button-3rdblock {
+    width: 319px;
+    margin-top: 30px;
+  }
+
+  footer {
+    width: 960px;
+  }
+  footer .footer-menu .text-footer {
+    font-size: 11px;
+    width: 80%;
+  }
+  footer .footer-menu .text-footer2 {
+    font-size: 12px;
+    width: 80%;
+  }
+  footer .menu-section2 {
+    width: 45%;
+  }
+  footer .menu-section2 ul li {
+    font-size: 13px;
+  }
+  footer .menu-section3 {
+    margin-right: 33px;
+  }
+  footer .menu-section3 .text-menu-section3 .contact-number {
+    font-size: 14px;
+  }
+  footer .menu-section3 .text-menu-section3 .contact-number .worktime {
+    font-size: 11px;
+  }
+  footer .pick-education .dot {
+    left: 610px;
+  }
 }

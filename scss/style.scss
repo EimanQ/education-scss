@@ -7,10 +7,34 @@
         url(../fonts/Inter-ExtraBold.ttf) format('truetype');
 }
 
-$font-color-fff:#fff;
+$font-color-fff:#FFFFFF;
+$font-color-black:#000000;
+$font-color-f2f2f2:#F2F2F2;
+$font-color-df:#DFDFDE;
+$font-color-4a:#4A4A4A;
+$font-color-78:#787878;
+$font-color-25:#252525;
+$font-color-a8:#A8A8A8;
+$font-color-3:#333333;
 
 %d-f {
     display: flex;
+}
+
+%d-f-sb {
+    display: flex;
+    justify-content: space-between;
+}
+
+%d-f-sb-fldr-col {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+%d-f-sa {
+    display: flex;
+    justify-content: space-around;
 }
 
 %icons-s {
@@ -20,27 +44,95 @@ $font-color-fff:#fff;
     background-size: cover;
 }
 
-%d-f-sb {
-    display: flex;
-    justify-content: space-between;
-}
-
 %ph-settings {
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 %for-headers {
+    @extend %header-text-44px;
+}
+
+%main-header-text-55px {
+    font-weight: 800;
+    font-size: 55px;
+    line-height: 60px;
+}
+
+%header-text-44px {
     font-weight: 700;
     font-size: 44px;
     line-height: 51px;
 }
 
-%mq-p {
+%slider-text600 {
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 30px;
+}
+
+%slider-text400 {
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30px;
+}
+
+%discription-text {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 40px;
+}
+
+%discription-text-600w {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 32px;
+}
+
+%text-18px-no-w {
+    font-size: 18px;
+    line-height: 32px;
+}
+
+%text-16px {
+    font-weight: 400;
     font-size: 16px;
     line-height: 22px;
     letter-spacing: 0.01em;
-    color: #000000;
+}
+
+%text-16px-w600 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+}
+
+%ul-li-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+}
+
+%ul-li-text600 {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+}
+
+%text-13px {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 22px;
+}
+
+%text-11px {
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 22px;
+    letter-spacing: 0.17em;
 }
 
 %direction-box {
@@ -56,7 +148,7 @@ $font-color-fff:#fff;
 }
 
 %input-style-small {
-    background: #F2F2F2;
+    background: $font-color-f2f2f2;
     border-radius: 4px;
     width: 293px;
     height: 56px;
@@ -66,9 +158,23 @@ $font-color-fff:#fff;
 }
 
 %gray-text13 {
-    font-size: 13px;
-    line-height: 22px;
-    color: #787878;
+    @extend %text-13px;
+    color: $font-color-78;
+}
+
+%svg-icons-resolution {
+    width: 120px;
+    height: 120px;
+}
+
+%svg-icon-position {
+    top: 104px;
+    left: 232px;
+}
+
+%cover-box-resolution {
+    width: 488px;
+    height: 400px;
 }
 
 * {
@@ -81,13 +187,24 @@ $font-color-fff:#fff;
 
 body {
     margin: auto;
-    width: 1216px;
     background: rgb(0, 0, 0);
     background: linear-gradient(0deg, rgba(0, 0, 0, 1) 33%, rgba(255, 255, 255, 1) 33%);
 }
 
 header {
+    max-width: 1216px;
+    margin: auto;
     margin-top: 20px;
+}
+
+main {
+    width: 1216px;
+    margin: auto;
+}
+
+footer {
+    width: 1216px;
+    margin: auto;
 }
 
 a {
@@ -141,11 +258,8 @@ a {
     }
 
     p {
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 22px;
-        letter-spacing: 0.01em;
-        color: #000000;
+        @extend %text-16px-w600;
+        color: $font-color-black;
         margin: auto;
     }
 }
@@ -153,17 +267,14 @@ a {
 .button {
     width: 177px;
     height: 30px;
-    display: flex;
+    @extend %d-f;
     background-color: black;
     border-radius: 4px;
 
     p {
-        font-weight: 700;
-        font-size: 11px;
-        line-height: 22px;
-        letter-spacing: 0.17em;
+        @extend %text-11px;
         text-transform: uppercase;
-        color: #FFFFFF;
+        color: $font-color-fff;
         width: 153px;
         height: 22px;
         margin: auto;
@@ -178,12 +289,10 @@ a {
 
         li {
             padding: 4px 12px;
-            background: #F2F2F2;
+            background: $font-color-f2f2f2;
             border-radius: 28px;
             list-style-type: none;
-            font-size: 16px;
-            line-height: 22px;
-            letter-spacing: 0.01em;
+            @extend %text-16px;
         }
     }
 }
@@ -201,18 +310,15 @@ a {
     position: relative;
 
     h1 {
+        @extend %main-header-text-55px;
         width: 506px;
-        font-weight: 800;
-        font-size: 55px;
-        line-height: 60px;
-        color: #000000;
+        color: $font-color-black;
     }
 
     p {
         width: 550px;
-        font-size: 22px;
-        line-height: 40px;
-        color: #000000;
+        @extend %discription-text;
+        color: $font-color-black;
         margin-top: 21px;
     }
 
@@ -222,14 +328,13 @@ a {
         margin-top: 68px;
 
         li {
-            line-height: 28px;
-            letter-spacing: 0.01em;
+            @extend %ul-li-text;
         }
 
         li:not(:first-child) {
             margin-left: 40px;
             padding-left: 7px;
-            font-size: 14px;
+            @extend %ul-li-text;
         }
     }
 
@@ -257,7 +362,7 @@ a {
 .your-education {
     width: 304px;
     height: 424px;
-    background-color: #000000;
+    background-color: $font-color-black;
     margin-top: 70px;
     padding: 32px 40px 40px 40px;
 
@@ -269,11 +374,11 @@ a {
         .slider {
             width: 95px;
             height: 2px;
-            background-color: #252525;
+            background-color: $font-color-25;
         }
 
         .slider-focus {
-            background-color: #DFDFDE;
+            background-color: $font-color-df;
         }
     }
 
@@ -283,16 +388,13 @@ a {
         margin-top: 15px;
 
         h1 {
-            font-weight: 600;
-            font-size: 22px;
-            line-height: 40px;
-            color: #FFFFFF;
+            @extend %discription-text-600w;
+            color: $font-color-fff;
         }
 
         p {
-            font-size: 13px;
-            line-height: 22px;
-            color: #787878;
+            @extend %text-13px;
+            color: $font-color-78;
             margin-top: 12px;
         }
     }
@@ -300,9 +402,8 @@ a {
     .question {
         margin-top: 95px;
         font-weight: 600;
-        font-size: 18px;
-        line-height: 26px;
-        color: #FFFFFF;
+        @extend %text-18px-no-w;
+        color: $font-color-fff;
     }
 
     .answers {
@@ -311,14 +412,11 @@ a {
 
         p {
             padding: 4px 12px;
-            border: 1px #252525 solid;
+            border: 1px $font-color-25 solid;
             border-radius: 28px;
             list-style-type: none;
-            font-weight: 600;
-            font-size: 16px;
-            line-height: 22px;
-            letter-spacing: 0.01em;
-            color: #A8A8A8;
+            @extend %text-16px-w600;
+            color: $font-color-a8;
             margin-right: 2px;
             margin-top: 18px;
         }
@@ -326,18 +424,15 @@ a {
 
     .button-education {
         display: flex;
-        background-color: #333333;
+        background-color: $font-color-3;
         width: 304px;
         height: 48px;
         border-radius: 4px;
         margin-top: 53px;
 
         p {
-            font-weight: 700;
-            font-size: 16px;
-            line-height: 22px;
-            letter-spacing: 0.01em;
-            color: #FFFFFF;
+            @extend %text-16px-w600;
+            color: $font-color-fff;
             margin: auto;
         }
     }
@@ -346,14 +441,13 @@ a {
 .bottom-line {
     width: 1216px;
     height: 1px;
-    background-color: #DFDFDE;
+    background-color: $font-color-df;
     margin: auto;
     margin-top: 70px;
 }
 
 .container-2 {
-    display: flex;
-    justify-content: space-around;
+    @extend %d-f-sa;
 
     .emblem-1,
     .emblem-2,
@@ -390,10 +484,8 @@ a {
     margin-top: 92px;
 
     .head-text-cont3 {
-        font-weight: 800;
-        font-size: 55px;
-        line-height: 60px;
-        color: #000000;
+        @extend %main-header-text-55px;
+        color: $font-color-black;
     }
 }
 
@@ -408,17 +500,13 @@ a {
         margin-right: 35px;
 
         .text-focus-choose {
-            font-weight: 600;
-            font-size: 26px;
-            line-height: 30px;
+            @extend %slider-text600;
             margin: auto;
         }
 
         .degree-focus {
-            font-weight: 600;
-            font-size: 14px;
-            line-height: 24px;
-            color: #000000;
+            @extend %ul-li-text600;
+            color: $font-color-black;
             margin: 0px 8px;
         }
     }
@@ -438,32 +526,28 @@ a {
 }
 
 .text-choose {
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 30px;
-    color: #A8A8A8;
+    @extend %slider-text400;
+    color: $font-color-a8;
     margin: auto;
     margin-right: 8px;
 }
 
 .degree {
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 24px;
-    color: #A8A8A8;
+    @extend %ul-li-text600;
+    color: $font-color-a8;
 }
 
 .line {
     width: 1216px;
     height: 2px;
-    background-color: #DFDFDE;
+    background-color: $font-color-df;
     margin-top: 16px;
     margin-bottom: 31px;
 
     .focus-line {
         width: 106px;
         height: 3px;
-        background-color: #000000;
+        background-color: $font-color-black;
     }
 }
 
@@ -479,30 +563,24 @@ a {
     position: relative;
 
     .direction-header {
-        font-weight: 600;
-        font-size: 22px;
-        line-height: 32px;
-        color: #000000;
+        @extend %discription-text-600w;
+        color: $font-color-black;
     }
 
     .svg-icon-1 {
         background-image: url(../img/svg-icon1.svg);
         @extend %ph-settings;
-        width: 120px;
-        height: 120px;
+        @extend %svg-icons-resolution;
         position: absolute;
-        top: 104px;
-        left: 232px;
+        @extend %svg-icon-position;
     }
 
     ul {
         margin-top: 9px;
 
         li {
-            font-size: 14px;
-            line-height: 28px;
-            letter-spacing: 0.01em;
-            color: #000000;
+            @extend %ul-li-text;
+            color: $font-color-black;
             margin-left: 19px;
         }
     }
@@ -510,7 +588,7 @@ a {
     .consult-button {
         width: 160px;
         height: 30px;
-        border: 1px #000000 solid;
+        border: 1px $font-color-black solid;
         border-radius: 4px;
         margin-top: 66px;
         position: relative;
@@ -526,12 +604,9 @@ a {
         }
 
         p {
-            font-weight: 700;
-            font-size: 11px;
-            line-height: 22px;
-            letter-spacing: 0.17em;
+            @extend %text-11px;
             text-transform: uppercase;
-            color: #000000;
+            color: $font-color-black;
             text-align: center;
             padding-top: 4px;
             padding-left: 30px;
@@ -546,30 +621,24 @@ a {
     position: relative;
 
     .direction-header {
-        font-weight: 600;
-        font-size: 22px;
-        line-height: 32px;
-        color: #000000;
+        @extend %discription-text-600w;
+        color: $font-color-black;
     }
 
     .svg-icon-2 {
         background-image: url(../img/svg-icon2.svg);
         @extend %ph-settings;
-        width: 120px;
-        height: 120px;
+        @extend %svg-icons-resolution;
         position: absolute;
-        top: 104px;
-        left: 232px;
+        @extend %svg-icon-position;
     }
 
     ul {
         margin-top: 9px;
 
         li {
-            font-size: 14px;
-            line-height: 28px;
-            letter-spacing: 0.01em;
-            color: #000000;
+            @extend %ul-li-text;
+            color: $font-color-black;
             margin-left: 19px;
         }
     }
@@ -577,7 +646,7 @@ a {
     .consult-button {
         width: 160px;
         height: 30px;
-        border: 1px #000000 solid;
+        border: 1px $font-color-black solid;
         border-radius: 4px;
         margin-top: 66px;
         position: relative;
@@ -593,12 +662,9 @@ a {
         }
 
         p {
-            font-weight: 700;
-            font-size: 11px;
-            line-height: 22px;
-            letter-spacing: 0.17em;
+            @extend %text-11px;
             text-transform: uppercase;
-            color: #000000;
+            color: $font-color-black;
             text-align: center;
             padding-top: 4px;
             padding-left: 30px;
@@ -613,30 +679,24 @@ a {
     position: relative;
 
     .direction-header {
-        font-weight: 600;
-        font-size: 22px;
-        line-height: 32px;
-        color: #000000;
+        @extend %discription-text-600w;
+        color: $font-color-black;
     }
 
     .svg-icon-3 {
         background-image: url(../img/svg-icon3.svg);
         @extend %ph-settings;
-        width: 120px;
-        height: 120px;
+        @extend %svg-icons-resolution;
         position: absolute;
-        top: 104px;
-        left: 232px;
+        @extend %svg-icon-position;
     }
 
     ul {
         margin-top: 9px;
 
         li {
-            font-size: 14px;
-            line-height: 28px;
-            letter-spacing: 0.01em;
-            color: #000000;
+            @extend %ul-li-text;
+            color: $font-color-black;
             margin-left: 19px;
         }
     }
@@ -644,7 +704,7 @@ a {
     .consult-button {
         width: 160px;
         height: 30px;
-        border: 1px #000000 solid;
+        border: 1px $font-color-black solid;
         border-radius: 4px;
         margin-top: 66px;
         position: relative;
@@ -660,12 +720,9 @@ a {
         }
 
         p {
-            font-weight: 700;
-            font-size: 11px;
-            line-height: 22px;
-            letter-spacing: 0.17em;
+            @extend %text-11px;
             text-transform: uppercase;
-            color: #000000;
+            color: $font-color-black;
             text-align: center;
             padding-top: 4px;
             padding-left: 30px;
@@ -680,30 +737,24 @@ a {
     position: relative;
 
     .direction-header {
-        font-weight: 600;
-        font-size: 22px;
-        line-height: 32px;
-        color: #000000;
+        @extend %discription-text-600w;
+        color: $font-color-black;
     }
 
     .svg-icon-4 {
         background-image: url(../img/svg-icon4.svg);
         @extend %ph-settings;
-        width: 120px;
-        height: 120px;
+        @extend %svg-icons-resolution;
         position: absolute;
-        top: 104px;
-        left: 232px;
+        @extend %svg-icon-position;
     }
 
     ul {
         margin-top: 9px;
 
         li {
-            font-size: 14px;
-            line-height: 28px;
-            letter-spacing: 0.01em;
-            color: #000000;
+            @extend %ul-li-text;
+            color: $font-color-black;
             margin-left: 19px;
         }
     }
@@ -711,7 +762,7 @@ a {
     .consult-button {
         width: 160px;
         height: 30px;
-        border: 1px #000000 solid;
+        border: 1px $font-color-black solid;
         border-radius: 4px;
         margin-top: 66px;
         position: relative;
@@ -727,12 +778,9 @@ a {
         }
 
         p {
-            font-weight: 700;
-            font-size: 11px;
-            line-height: 22px;
-            letter-spacing: 0.17em;
+            @extend %text-11px;
             text-transform: uppercase;
-            color: #000000;
+            color: $font-color-black;
             text-align: center;
             padding-top: 4px;
             padding-left: 30px;
@@ -747,30 +795,24 @@ a {
     position: relative;
 
     .direction-header {
-        font-weight: 600;
-        font-size: 22px;
-        line-height: 32px;
-        color: #000000;
+        @extend %discription-text-600w;
+        color: $font-color-black;
     }
 
     .svg-icon-5 {
         background-image: url(../img/svg-icon5.svg);
         @extend %ph-settings;
-        width: 120px;
-        height: 120px;
+        @extend %svg-icons-resolution;
         position: absolute;
-        top: 104px;
-        left: 232px;
+        @extend %svg-icon-position;
     }
 
     ul {
         margin-top: 9px;
 
         li {
-            font-size: 14px;
-            line-height: 28px;
-            letter-spacing: 0.01em;
-            color: #000000;
+            @extend %ul-li-text;
+            color: $font-color-black;
             margin-left: 19px;
         }
     }
@@ -778,7 +820,7 @@ a {
     .consult-button {
         width: 160px;
         height: 30px;
-        border: 1px #000000 solid;
+        border: 1px $font-color-black solid;
         border-radius: 4px;
         margin-top: 66px;
         position: relative;
@@ -794,12 +836,9 @@ a {
         }
 
         p {
-            font-weight: 700;
-            font-size: 11px;
-            line-height: 22px;
-            letter-spacing: 0.17em;
+            @extend %text-11px;
             text-transform: uppercase;
-            color: #000000;
+            color: $font-color-black;
             text-align: center;
             padding-top: 4px;
             padding-left: 30px;
@@ -814,30 +853,24 @@ a {
     position: relative;
 
     .direction-header {
-        font-weight: 600;
-        font-size: 22px;
-        line-height: 32px;
-        color: #000000;
+        @extend %discription-text-600w;
+        color: $font-color-black;
     }
 
     .svg-icon-6 {
         background-image: url(../img/svg-icon6.svg);
         @extend %ph-settings;
-        width: 120px;
-        height: 120px;
+        @extend %svg-icons-resolution;
         position: absolute;
-        top: 104px;
-        left: 232px;
+        @extend %svg-icon-position;
     }
 
     ul {
         margin-top: 9px;
 
         li {
-            font-size: 14px;
-            line-height: 28px;
-            letter-spacing: 0.01em;
-            color: #000000;
+            @extend %ul-li-text;
+            color: $font-color-black;
             margin-left: 19px;
         }
     }
@@ -845,7 +878,7 @@ a {
     .consult-button-last {
         width: 160px;
         height: 30px;
-        border: 1px #000000 solid;
+        border: 1px $font-color-black solid;
         border-radius: 4px;
         margin-top: 38px;
         position: relative;
@@ -861,12 +894,9 @@ a {
         }
 
         p {
-            font-weight: 700;
-            font-size: 11px;
-            line-height: 22px;
-            letter-spacing: 0.17em;
+            @extend %text-11px;
             text-transform: uppercase;
-            color: #000000;
+            color: $font-color-black;
             text-align: center;
             padding-top: 4px;
             padding-left: 30px;
@@ -878,18 +908,15 @@ a {
     width: 1216px;
     height: 48px;
     display: flex;
-    border: 1px solid #DFDFDE;
+    border: 1px solid $font-color-df;
     border-radius: 4px;
     position: relative;
 
     p {
         margin: auto;
-        font-weight: 700;
-        font-size: 11px;
-        line-height: 22px;
-        letter-spacing: 0.17em;
+        @extend %text-11px;
         text-transform: uppercase;
-        color: #000000;
+        color: $font-color-black;
     }
 
     .arrow {
@@ -907,10 +934,8 @@ a {
     margin-top: 120px;
 
     h1 {
-        font-weight: 700;
-        font-size: 44px;
-        line-height: 51px;
-        color: #000000;
+        @extend %header-text-44px;
+        color: $font-color-black;
         width: 519px;
     }
 
@@ -923,8 +948,7 @@ a {
         @extend %d-f-sb;
 
         .advantages-info {
-            @extend %d-f;
-            justify-content: space-around;
+            @extend %d-f-sa;
             flex-direction: column;
         }
 
@@ -938,15 +962,13 @@ a {
         .cover-box2 {
             background-image: url(../img/cover-box2.svg);
             @extend %ph-settings;
-            width: 488px;
-            height: 400px;
+            @extend %cover-box-resolution;
         }
 
         .cover-box3 {
             background-image: url(../img/cover-box3.svg);
             @extend %ph-settings;
-            width: 488px;
-            height: 400px;
+            @extend %cover-box-resolution;
         }
     }
 }
@@ -957,9 +979,9 @@ a {
 
 
 .advantages-about {
-    font-size: 22px;
-    line-height: 40px;
-    color: #000000;
+    margin-top: 20px;
+    @extend %discription-text;
+    color: $font-color-black;
     width: 515px;
 }
 
@@ -973,31 +995,28 @@ a {
     margin-top: 47px;
 
     .edtext-adv-focus {
-        font-weight: 600;
-        font-size: 26px;
-        line-height: 30px;
-        color: #000000;
+        @extend %slider-text600;
+        color: $font-color-black;
         margin-right: 103px;
     }
 
     .edtext-adv {
-        font-size: 26px;
-        line-height: 30px;
-        color: #A8A8A8;
+        @extend %slider-text400;
+        color: $font-color-a8;
         margin-right: 96px;
     }
 }
 
 .line-advantages {
     margin-top: 17px;
-    background-color: #DFDFDE;
+    background-color: $font-color-df;
     width: 592px;
     height: 2px;
 
     .line-focus {
         width: 88px;
         height: 3px;
-        background-color: #000000;
+        background-color: $font-color-black;
     }
 }
 
@@ -1005,14 +1024,12 @@ a {
     @extend %d-f;
     width: 279px;
     height: 48px;
-    border: 1px solid #000000;
+    border: 1px solid $font-color-black;
     border-radius: 4px;
 
     p {
         margin: auto;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 22px;
+        @extend %text-16px-w600;
     }
 }
 
@@ -1022,16 +1039,15 @@ a {
 
 .faq {
     padding-top: 130px;
+
     .q-a {
         .header-q-a {
             @extend %d-f-sb;
             margin-top: 120px;
 
             h1 {
-                font-weight: 700;
-                font-size: 44px;
-                line-height: 51px;
-                color: #FFFFFF;
+                @extend %header-text-44px;
+                color: $font-color-fff;
             }
 
             p {
@@ -1043,42 +1059,38 @@ a {
 
         .line-q-a {
             @extend %line-setting;
-            background-color: #4A4A4A;
+            background-color: $font-color-4a;
             margin: 37px 0px;
         }
 
         h2 {
-            font-weight: 600;
-            font-size: 22px;
+            @extend %discription-text-600w;
             line-height: 40px;
-            color: #FFFFFF;
+            color: $font-color-fff;
             width: 800px;
         }
     }
 }
 
 .more-questions {
-    background-color: #FFFFFF;
+    background-color: $font-color-fff;
     @extend %d-f;
 
     .first-block {
-        @extend %d-f;
-        flex-direction: column;
-        justify-content: space-between;
+        @extend %d-f-sb-fldr-col;
         width: 328px;
         height: 294px;
         margin: 94px 0px 61px 56px;
 
         h1 {
             @extend %for-headers;
-            color: #000000;
+            color: $font-color-black;
         }
 
         .answer-info {
             width: 260px;
-            font-size: 18px;
-            line-height: 32px;
-            color: #000000;
+            @extend %text-18px-no-w;
+            color: $font-color-black;
         }
 
         .manager {
@@ -1105,11 +1117,11 @@ a {
         width: 328px;
         height: 310px;
         margin: 94px 0px 49px 40px;
-        @extend %d-f-sb;
-        flex-direction: column;
+        @extend %d-f-sb-fldr-col;
 
         input-question {
-            @extend %mq-p
+            @extend %text-16px;
+            color: $font-color-black;
         }
 
         .input-second-b {
@@ -1125,12 +1137,12 @@ a {
         margin: 94px 0px 49px 40px;
 
         .q-write {
-            @extend %mq-p;
+            @extend %text-16px;
+            color: $font-color-black;
         }
 
         .box-info-mq {
-            @extend %d-f-sb;
-            flex-direction: column;
+            @extend %d-f-sb-fldr-col;
             height: 320px;
 
             .few-questions {
@@ -1141,16 +1153,16 @@ a {
         }
 
         .button-3rdblock {
-            background-color: #000000;
+            background-color: $font-color-black;
             width: 344px;
             height: 63px;
             border-radius: 4px;
             @extend %d-f;
 
             .button-text-mq {
-                @extend %mq-p;
+                @extend %text-16px;
                 margin: auto;
-                color: #FFFFFF;
+                color: $font-color-fff;
             }
         }
     }
@@ -1166,8 +1178,7 @@ footer {
         .menu-section1 {
             width: 224px;
             height: 136px;
-            @extend %d-f-sb;
-            flex-direction: column;
+            @extend %d-f-sb-fldr-col;
         }
 
         .text-footer {
@@ -1176,7 +1187,7 @@ footer {
 
         .text-footer2 {
             @extend %gray-text13;
-            color: #fff;
+            color: $font-color-fff;
         }
     }
 
@@ -1185,14 +1196,13 @@ footer {
         width: 520px;
 
         ul {
-            @extend %d-f-sb;
-            flex-direction: column;
+            @extend %d-f-sb-fldr-col;
             height: 190px;
 
             li {
-                @extend %mq-p;
+                @extend %text-16px;
                 list-style-type: none;
-                color: #FFFFFF;
+                color: $font-color-fff;
             }
         }
     }
@@ -1200,23 +1210,21 @@ footer {
     .menu-section3 {
         width: 152px;
         height: 190px;
-        @extend %d-f-sb;
-        flex-direction: column;
+        @extend %d-f-sb-fldr-col;
         margin-right: 67px;
 
         .text-menu-section3 {
             height: 79px;
-            @extend %d-f-sb;
-            flex-direction: column;
+            @extend %d-f-sb-fldr-col;
 
             .contact-number {
-                @extend %mq-p;
-                color: #FFFFFF;
+                @extend %text-16px;
+                color: $font-color-fff;
             }
 
             .worktime {
                 @extend %gray-text13;
-                color: #FFFFFF;
+                color: $font-color-fff;
             }
         }
     }
@@ -1229,13 +1237,12 @@ footer {
     margin-top: 94px;
 
     h1 {
-        font-size: 22px;
-        line-height: 32px;
-        color: #FFFFFF;
+        @extend %discription-text;
+        color: $font-color-fff;
         margin: auto;
     }
 
-    .dot{
+    .dot {
         background-image: url(../img/dot.svg);
         @extend %ph-settings;
         width: 8px;
@@ -1243,5 +1250,308 @@ footer {
         position: absolute;
         top: 29px;
         left: 734px;
+    }
+}
+
+@media (max-width: 1216px) {
+    body {
+        background: rgb(0, 0, 0);
+        background: linear-gradient(0deg, rgba(0, 0, 0, 1) 27%, rgba(255, 255, 255, 1) 27%);
+    }
+
+    header {
+        max-width: 960px;
+        margin: auto;
+        margin-top: 20px;
+
+        .navigation {
+            margin: auto;
+
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin-top: 20px;
+
+                li {
+                    margin: 10px;
+                }
+            }
+        }
+    }
+
+    main {
+        width: 960px;
+        margin: auto;
+
+        .container-1 {
+            .about-education {
+                width: 520px;
+                height: 380px;
+
+                h1 {
+                    font-size: 43px;
+                    max-width: 80%;
+                }
+
+                p {
+                    font-size: 15px;
+                    max-width: 80%;
+                }
+
+                ul {
+
+
+                    li {
+                        font-size: 11px;
+                    }
+                }
+
+                .moscow-img {
+                    width: 80px;
+                    height: 80px;
+                    top: 340px;
+                    left: 505px;
+                }
+
+                .share-icon {
+                    width: 20px;
+                    height: 20px;
+                    top: 50px;
+                    left: 550px;
+                }
+            }
+
+            .your-education {
+                width: 270px;
+                height: 389px;
+
+                .sliders-box {
+
+                    .slider-focus,
+                    .slider {
+                        max-width: 30%;
+                    }
+
+                    .slider-focus {}
+                }
+
+                .head-text-education {
+                    margin-top: 27px;
+
+                    h1 {
+                        font-size: 30px;
+                    }
+
+                    p {
+                        font-size: 20px;
+                    }
+                }
+
+                .question {}
+
+                .answers {
+
+
+                    p {
+                        font-size: 12px;
+                    }
+                }
+
+                .button-education {
+                    max-width: 70%;
+                    margin: auto;
+                    margin-top: 20px;
+                }
+            }
+        }
+
+        .bottom-line {
+            width: 960px;
+        }
+
+        .container-3 {
+            .line {
+                width: 960px;
+            }
+        }
+
+        .button-24 {
+            width: 960px;
+
+            .arrow {
+                left: 620px;
+            }
+        }
+
+        .container-4 {
+            .advantages-box {
+                display: flex;
+                flex-direction: column;
+
+                .advantages-info {
+                    width: 960px;
+
+                    h1 {
+                        font-size: 34px;
+                        width: 80%;
+                    }
+
+                    .text-slider-advantages {
+                        p {
+                            font-size: 20px;
+                        }
+                    }
+
+                    .line-advantages {
+                        max-width: 70%;
+                    }
+                }
+            }
+
+            .advantages-about {
+                font-size: 20px;
+                width: 80%;
+            }
+
+
+            .cover-box1,
+            .cover-box2,
+            .cover-box3 {
+                margin-top: 30px;
+                max-width: 100%;
+            }
+        }
+
+        .faq {
+            .q-a {
+                .line-q-a {
+                    width: 960px;
+                }
+            }
+        }
+
+        .more-questions {
+            .first-block {
+
+
+                h1 {
+                    font-size: 30px;
+                }
+
+                .answer-info {
+                    font-size: 15px;
+                    width: 70%;
+                }
+
+                .manager {
+                    margin: 0px 3px;
+
+                    .profile-icon-manager {
+                        width: 40px;
+                        height: 40px;
+                    }
+
+                    .manager-answer {
+                        font-size: 11px;
+                        width: 80%;
+                    }
+                }
+            }
+
+            .second-block {
+                margin: 104px 0px 49px 0px;
+
+                input-question {
+                    font-size: 15px;
+                }
+
+                .input-second-b {
+                    width: 190px;
+                }
+
+                .personal-info {
+                    font-size: 11px;
+                    width: 90%;
+                }
+            }
+
+            .third-block {
+                margin: 101px 30px 0px 0px;
+
+
+                .q-write {
+                    font-size: 15px;
+                }
+
+                .box-info-mq {
+                    height: 280px;
+
+                    .few-questions {
+                        width: 300px;
+                    }
+                }
+
+                .button-3rdblock {
+                    width: 319px;
+                    margin-top: 30px;
+
+
+                }
+            }
+        }
+    }
+
+    footer {
+        width: 960px;
+
+        .footer-menu {
+
+
+            .menu-section1 {}
+
+            .text-footer {
+                font-size: 11px;
+                width: 80%;
+            }
+
+            .text-footer2 {
+                font-size: 12px;
+                width: 80%;
+            }
+        }
+
+        .menu-section2 {
+            width: 45%;
+
+            ul {
+
+                li {
+                    font-size: 13px;
+                }
+            }
+        }
+
+        .menu-section3 {
+            margin-right: 33px;
+
+            .text-menu-section3 {
+
+
+                .contact-number {
+                    font-size: 14px;
+
+                    .worktime {
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+
+        .pick-education {
+            .dot {
+                left: 610px;
+            }
+        }
     }
 }
