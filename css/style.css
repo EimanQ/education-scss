@@ -91,7 +91,7 @@ footer .menu-section3 .text-menu-section3, footer .menu-section3, footer .menu-s
   line-height: 32px;
 }
 
-footer .menu-section3 .text-menu-section3 .contact-number, footer .menu-section2 ul li, .more-questions .third-block .button-3rdblock .button-text-mq, .more-questions .third-block .q-write, .more-questions .second-block input-question, .navigation ul li {
+footer .menu-section3 .text-menu-section3 .contact-number, footer .menu-section2 ul li, .more-questions .third-block .button-3rdblock .button-text-mq, .more-questions .third-block .q-write, .more-questions .second-block input-question p, .navigation ul li {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
@@ -880,7 +880,7 @@ a {
   height: 310px;
   margin: 94px 0px 49px 40px;
 }
-.more-questions .second-block input-question {
+.more-questions .second-block input-question p {
   color: #000000;
 }
 .more-questions .third-block {
@@ -966,8 +966,8 @@ footer .menu-section3 .text-menu-section3 .worktime {
 @media screen and (max-width: 1216px) {
   body {
     background: black;
-    background: -webkit-gradient(linear, left bottom, left top, color-stop(27%, black), color-stop(27%, white));
-    background: linear-gradient(0deg, black 27%, white 27%);
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(25%, black), color-stop(25%, white));
+    background: linear-gradient(0deg, black 25%, white 25%);
   }
 
   header {
@@ -994,63 +994,33 @@ footer .menu-section3 .text-menu-section3 .worktime {
   }
 
   main {
-    width: 960px;
-    margin: auto;
+    max-width: 960px;
+  }
+  main .container-1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   main .container-1 .about-education {
-    width: 520px;
-    height: 380px;
-  }
-  main .container-1 .about-education h1 {
-    font-size: 43px;
-    max-width: 80%;
-  }
-  main .container-1 .about-education p {
-    font-size: 15px;
-    max-width: 80%;
-  }
-  main .container-1 .about-education ul li {
-    font-size: 11px;
-  }
-  main .container-1 .about-education .moscow-img {
-    width: 80px;
-    height: 80px;
-    top: 340px;
-    left: 505px;
-  }
-  main .container-1 .about-education .share-icon {
-    width: 20px;
-    height: 20px;
-    top: 50px;
-    left: 550px;
+    margin: auto;
+    margin-top: 30px;
   }
   main .container-1 .your-education {
-    width: 270px;
-    height: 389px;
-  }
-  main .container-1 .your-education .sliders-box .slider-focus,
-main .container-1 .your-education .sliders-box .slider {
-    max-width: 30%;
-  }
-  main .container-1 .your-education .head-text-education {
-    margin-top: 27px;
-  }
-  main .container-1 .your-education .head-text-education h1 {
-    font-size: 30px;
-  }
-  main .container-1 .your-education .head-text-education p {
-    font-size: 20px;
-  }
-  main .container-1 .your-education .answers p {
-    font-size: 12px;
-  }
-  main .container-1 .your-education .button-education {
-    max-width: 70%;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 50px;
   }
   main .bottom-line {
     width: 960px;
+  }
+  main .container-3 .head-text-cont3 {
+    font-size: 44px;
+  }
+  main .container-3 .text-slider .slidertext-focus .text-focus-choose {
+    font-size: 25px;
+  }
+  main .container-3 .text-slider .text-choose {
+    font-size: 25px;
   }
   main .container-3 .line {
     width: 960px;
@@ -1075,13 +1045,34 @@ main .container-1 .your-education .sliders-box .slider {
   }
   main .container-4 .advantages-box .advantages-info h1 {
     font-size: 34px;
-    width: 80%;
+    width: 960px;
+    text-align: center;
+  }
+  main .container-4 .advantages-box .advantages-info .advantages-about {
+    text-align: center;
+    width: 960px;
+  }
+  main .container-4 .advantages-box .advantages-info .text-slider-advantages {
+    width: 960px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   main .container-4 .advantages-box .advantages-info .text-slider-advantages p {
+    margin: 0;
     font-size: 20px;
   }
+  main .container-4 .advantages-box .advantages-info .text-slider-advantages p:not(:last-child) {
+    margin-right: 100px;
+  }
   main .container-4 .advantages-box .advantages-info .line-advantages {
-    max-width: 70%;
+    width: 43%;
+    margin-left: 275px;
+    margin-top: 5px;
+  }
+  main .container-4 .advantages-box .button-advantages {
+    margin: auto;
+    margin-top: 30px;
   }
   main .container-4 .advantages-about {
     font-size: 20px;
@@ -1090,7 +1081,8 @@ main .container-1 .your-education .sliders-box .slider {
   main .container-4 .cover-box1,
 main .container-4 .cover-box2,
 main .container-4 .cover-box3 {
-    margin-top: 30px;
+    margin: auto;
+    margin-top: 35px;
     max-width: 100%;
   }
   main .faq .q-a .line-q-a {
@@ -1169,6 +1161,297 @@ main .container-4 .cover-box3 {
   }
   footer .menu-section3 .text-menu-section3 .contact-number .worktime {
     font-size: 11px;
+  }
+  footer .pick-education .dot {
+    left: 610px;
+  }
+}
+@media screen and (max-width: 992px) {
+  body {
+    background: black;
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(36%, black), color-stop(36%, white));
+    background: linear-gradient(0deg, black 36%, white 36%);
+  }
+
+  header {
+    max-width: 720px;
+  }
+  header .header-box .profile-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  header .header-box .profile-menu .logo-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 177px;
+    margin: 0;
+    margin-top: 1px;
+  }
+  header .header-box .profile {
+    visibility: hidden;
+  }
+
+  main {
+    max-width: 720px;
+  }
+  main .container-1 .about-education {
+    width: 580px;
+  }
+  main .container-1 .about-education h1 {
+    font-size: 33px;
+  }
+  main .container-1 .about-education p {
+    font-size: 15px;
+    width: 70%;
+  }
+  main .container-1 .about-education li {
+    font-size: 13px;
+  }
+  main .container-1 .about-education .moscow-img {
+    visibility: hidden;
+  }
+  main .container-1 .about-education .share-icon {
+    left: 590px;
+    top: 60px;
+  }
+  main .container-1 .your-education {
+    margin: auto;
+    margin-top: 50px;
+  }
+  main .bottom-line {
+    width: 720px;
+  }
+  main .container-2 .emblem-1,
+main .container-2 .emblem-2,
+main .container-2 .emblem-3,
+main .container-2 .emblem-4,
+main .container-2 .emblem-5 {
+    width: 120px;
+    height: 52px;
+    margin-top: 56px;
+  }
+  main .container-3 .head-text-cont3 {
+    margin: auto;
+    font-size: 33px;
+  }
+  main .container-3 .text-slider .slidertext-focus .text-focus-choose {
+    font-size: 20px;
+  }
+  main .container-3 .text-slider .text-choose {
+    font-size: 20px;
+  }
+  main .container-3 .study-directions {
+    width: 540px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 180px;
+  }
+  main .container-3 .line {
+    width: 720px;
+  }
+  main .button-24 {
+    width: 720px;
+  }
+  main .button-24 .arrow {
+    top: 18px;
+    left: 490px;
+  }
+  main .container-4 .advantages-box .advantages-info {
+    width: 720px;
+  }
+  main .container-4 .advantages-box .advantages-info h1 {
+    font-size: 33px;
+    width: 720px;
+    text-align: center;
+  }
+  main .container-4 .advantages-box .advantages-info .advantages-about {
+    text-align: center;
+    width: 720px;
+  }
+  main .container-4 .advantages-box .advantages-info .text-slider-advantages {
+    width: 720px;
+  }
+  main .container-4 .advantages-box .advantages-info .text-slider-advantages p {
+    margin: 0;
+    font-size: 20px;
+  }
+  main .container-4 .advantages-box .advantages-info .text-slider-advantages p:not(:last-child) {
+    margin-right: 100px;
+  }
+  main .container-4 .advantages-box .advantages-info .line-advantages {
+    width: 57%;
+    margin-left: 156px;
+    margin-top: 5px;
+  }
+  main .container-4 .advantages-box .button-advantages {
+    margin: auto;
+    margin-top: 30px;
+  }
+  main .container-4 .advantages-about {
+    font-size: 20px;
+    width: 720px;
+  }
+  main .container-4 .cover-box1,
+main .container-4 .cover-box2,
+main .container-4 .cover-box3 {
+    max-width: 0px;
+    max-height: 0px;
+    visibility: hidden;
+    margin: 0;
+  }
+  main .faq .q-a .header-q-a h1 {
+    font-size: 33px;
+  }
+  main .faq .q-a .header-q-a p {
+    font-size: 11px;
+    width: 30%;
+  }
+  main .faq .q-a .line-q-a {
+    width: 720px;
+  }
+  main .faq .q-a h2 {
+    font-size: 19px;
+    max-width: 90%;
+  }
+  main .more-questions {
+    max-width: 600px;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    padding-bottom: 100px;
+  }
+  main .more-questions .first-block {
+    width: 360px;
+  }
+  main .more-questions .first-block h1 {
+    font-size: 55px;
+  }
+  main .more-questions .first-block .answer-info {
+    font-size: 15px;
+  }
+  main .more-questions .second-block {
+    margin: 0px;
+    height: 220px;
+  }
+  main .more-questions .second-block .name-input {
+    width: 320px;
+  }
+  main .more-questions .second-block .name-input p {
+    padding-left: 100px;
+  }
+  main .more-questions .second-block .number-input {
+    width: 320px;
+  }
+  main .more-questions .second-block .number-input p {
+    padding-left: 100px;
+  }
+  main .more-questions .second-block .input-second-b {
+    width: 300px;
+  }
+  main .more-questions .second-block .personal-info {
+    width: 350px;
+    position: absolute;
+    top: 1050px;
+    left: 142px;
+  }
+  main .more-questions .third-block {
+    margin: 0px;
+    margin-top: 50px;
+  }
+  main .more-questions .third-block .q-write {
+    font-size: 15px;
+    padding-left: 65px;
+  }
+  main .more-questions .third-block .box-info-mq {
+    height: 280px;
+  }
+  main .more-questions .third-block .box-info-mq .few-questions {
+    width: 300px;
+  }
+  main .more-questions .third-block .button-3rdblock {
+    width: 319px;
+    margin-top: 30px;
+  }
+
+  footer {
+    max-width: 720px;
+    height: 700px;
+  }
+  footer .footer-menu {
+    max-width: 720px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer .footer-menu .menu-section1 {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    text-align: center;
+    width: 600px;
+  }
+  footer .menu-section2 {
+    width: 600px;
+  }
+  footer .menu-section3 {
+    margin: 0;
+    width: 720px;
+    height: 130px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 70px;
+  }
+  footer .menu-section3 .text-menu-section3 {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 30px;
+  }
+  footer .menu-section3 .logo-items {
+    margin: 0;
   }
   footer .pick-education .dot {
     left: 610px;
